@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Astropedia - Our Solar System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+        <style> 
+            body {
+                background-image: url('wpmain.jpg');
+                background-attachment: fixed;
+                margin-bottom:650px;
+
+            }
+            h1 {
+                color: white;
+                margin-left: 50px;
+                float: left;
+                font-size: 50px;
+                text-shadow: 10px 10px 10px grey;
+                font-family: Edwardian -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+
+            tr{
+                color:white;
+                padding:20px;
+                font-family: sans-serif;                
+            } 
+
+            tbody {
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+            } 
+            td{
+                display: table-cell;
+                vertical-align: inherit;
+            }  
+
+            th, td {
+                padding: 15px;
+                text-align: center;
+                width:250px;
+            }   
+
+            h3{
+                color:white;
+                font-family: serif;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+            
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+                border-bottom: 3px solid red;
+            }
+            
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+                border-bottom: 3px solid red;
+            }
+
+            .p1{
+                color: ivory;
+                font-family: 'Roboto', sans-serif;
+                font-size:30px;
+            } 
+
+            .div1{
+                text-align:center;
+                border:white 3px solid;
+                border-radius: 20px;
+                height:450px;
+            }
+            .img1{
+                position: relative;
+                top:30px;
+
+            }
+
+            .divo{
+                text-align:center;
+                border:white 3px solid;
+                border-radius: 20px;
+                height:700px;
+                width:1100px;
+                position: relative;
+                left:130px;
+            } 
+
+            .meteors{
+                height:200px;
+                width:250px;
+            }
+
+            #planetable, td{
+                    margin: auto;
+                    border: 2px solid white;
+                    font-size: .9em;
+            }
+
+            #planetable{   
+                border: 3px solid white;
+                font-size: .9em;                
+                display: table;
+                border-collapse: separate;
+                box-sizing: border-box;
+                border-spacing: 2px;
+                border-color: grey;
+                position: relative;
+                left:0px;
+                top:30px;
+
+            }
+
+            #logo {
+                float: left;
+                border-radius: 100%;
+                height: 150px;
+                height: 150px;
+            }
+
+            #planets{
+                height:300px;
+            } 
+
+            #sun{
+                height:250px;
+            } 
+
+            #dwarf{
+                height:300px;
+
+            }
+
+            #h2{
+                font-size:35px;
+                color: aquamarine;
+            }
+
+            #divs{
+                position: relative;
+                top:60px;
+                height:750px
+            }
+
+            #divs2{
+                position: relative;
+                top:490px;
+                height:710px;
+            }
+
+            #divs3{
+                position: relative;
+                top:520px;
+                height:710px;
+                font-weight: lighter;
+            }
+            #divs4{
+                position: relative;
+                top:550px;
+                height:1250px;
+            }
+
+            #divs5{
+                position: relative;
+                top:580px;
+                height:700px;
+            }
+
+            #divs6{
+                position: relative;
+                top:610px;
+                height:670px;
+            }
+
+            #div1{
+                position: relative;
+                top:30px;
+
+            }
+            
+            #div2{
+                height:600px;
+                position: relative;
+                top:90px;
+            }
+
+            #divo1{
+                position: relative;
+                top:120px;
+            }  
+
+            #divo2{
+                position: relative;
+                top:150px;
+            } 
+
+            #divo3{
+                position: relative;
+                top:180px;
+                height:730px;
+            }
+
+            #divo4{
+                position: relative;
+                top:210px;
+            }
+
+            #divo5{
+                position: relative;
+                top:240px;
+                height:730px;
+            }  
+
+            #divo6{
+                position: relative;
+                top:270px;
+            } 
+
+            #divo7{
+                position: relative;
+                top:300px;
+            } 
+
+            #divo8{
+                position: relative;
+                top:330px;
+            } 
+            #divo9{
+                position: relative;
+                top:360px;
+                height:650px;
+            } 
+            
+            #divoo1{
+                position: relative;
+                top:390px;
+                height:650px;
+                    
+            }
+
+            #divoo2{
+                position: relative;
+                top:420px;
+                height:790px;                
+            }
+
+            #divoo3{
+                position: relative;
+                top:450px;
+                height:750px;
+            }
+            #divm1{
+                position: relative;
+                top:480px;
+                height:750px;
+            }
+            #divm2{
+                position: relative;
+                top:510px;
+                height:750px;
+            }
+
+            #gototop {
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }            
+             ::-webkit-scrollbar {
+                width: 15px;
+            }
+            
+             ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+            
+             ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+            
+             ::-webkit-scrollbar-thumb:hover {
+                background: #555555;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="headd">
+            <a href="index.html"><img id="logo" src="Icon.jpeg" style="width: 100px; height: 100px; margin-top: 20px; margin-left: 20px; box-shadow: 10px 10px 10px grey;"></a>
+            <h1>Our Solar System</h1>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="topnav" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <a href="../Main/main.html">Home</a>
+            <a href="../Main/gallery.html" style="font-size: 16px;">Gallery</a>
+            <a href="../SpaceScience/spacescience.html" style="font-size: 16px;">Space Science</a>
+            <a href="Solarsystem.html" class="active" style="font-size: 16px;">Our Solar System</a>
+            <!-- <a href="../Webpages/School IT Project/" style="font-size: 16px;">Space Missions</a> -->
+            <!-- <a href="spaceagencies.html" style="font-size: 16px;">Space Agencies</a> -->
+            <a href="../Main/significantinventionsinastronomy.html" style="font-size: 16px;">Significant Inventions </a>
+            <!-- <a href="" style="font-size: 16px;">Great Astronomers</a> -->
+        </div>
+        <div class = "div1" id = "div1">
+            <table>
+                <tr>
+                    <h2 class = "p1" id = "h2">What is the Solar System?</h2>
+                        <p class = "p1" id = "p1">Our solar system consists of our
+                        star, the Sun, and everything bound to it by 
+                        gravity — the planets Mercury, Venus, Earth, Mars, 
+                        Jupiter, Saturn, Uranus and Neptune, dwarf planets 
+                        such as Pluto, dozens of moons and millions of 
+                        asteroids, comets and meteoroids. Beyond our own 
+                        solar system, we have discovered thousands of 
+                        planetary systems orbiting other stars in the Milky 
+                        Way.The planetary system we call home is located 
+                        in an outer spiral arm of the Milky Way galaxy.
+                        Our solar system consists of our star, the Sun, and 
+                        everything bound to it by gravity — the planets Mercury, 
+                        Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune, 
+                        dwarf planets such as Pluto, dozens of moons and millions 
+                        of asteroids, comets and meteoroids.             
+                        Beyond our own solar system, there are more planets than 
+                        stars in night sky</p>
+                </tr>
+            </table>
+        </div>
+        <div class = "div1" id = "divs">
+            <h2 class = "p1" id = "h2">Sun</h2>
+                <p class = "p1" id = "p1">
+                    The Sun—the heart of our solar system—is a yellow dwarf star, a hot ball of glowing gases.
+                    Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest particles of debris in its orbit. Electric currents in the Sun generate a magnetic field that is carried out through the solar system by the solar wind—a stream of electrically charged gas blowing outward from the Sun in all directions.
+
+                    The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate, radiation belts and aurorae. Though it is special to us, there are billions of stars like our Sun scattered across the Milky Way galaxy.
+                </p>
+            <img src="sun.jpg" class="img1" id = "sun" style="border-radius:100% ; box-shadow:#0000ff ;"> <br><br>
+            <p class = "p1" id = "p1">
+                Facts-The Sun is the largest object within our solar system, comprising 99.8% of the system’s mass.
+                The Sun is located at the center of our solar system, and Earth orbits 93 million miles away from it.
+            </p>
+        </div>
+        <div class = "div1" id = "div2">
+                    <h2 class = "p1" id = "h2">Planets</h2>
+                        <p class = "p1" id = "p1">
+                            There are more planets than stars in our 
+                            galaxy. The current count orbiting our star
+                            is eight The inner, rocky planets are 
+                            Mercury, Venus, Earth and Mars. The outer 
+                            planets are gas giants Jupiter and Saturn 
+                            and ice giants Uranus and Neptune.Beyond 
+                            Neptune, a newer class of smaller worlds 
+                            called dwarf planets reign, including 
+                            longtime favorite Pluto.
+                        </p>
+                        <img src="planets.jpg" class="img1" id = "planets"><br><br>
+        </div>
+        <div class = "divo" id = "divo1">
+            <h2 class = "p1" id = "h2">Mercury</h2>
+                <p class = "p1" id = "p1">
+                    The smallest planet in our solar system 
+                    and nearest to the Sun, Mercury is only 
+                    slightly larger than Earth's Moon.
+                    From the surface of Mercury, the Sun 
+                    would appear more than three times as 
+                    large as it does when viewed from Earth, 
+                    and the sunlight would be as much as 
+                    seven times brighter. Despite its 
+                    proximity to the Sun, Mercury is not the 
+                    hottest planet in our solar system – that
+                    title belongs to nearby Venus, thanks to
+                    its dense atmosphere.
+                </p>
+                <img src="mercury.jpg" class="img1">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-The smallest and fastest planet, it zips around the Sun in only 88 Earth days.
+                </p>
+        </div>
+        <div class = "divo" id = "divo2">
+            <h2 class = "p1" id = "h2">Venus</h2>
+                <p class = "p1" id = "p1">
+                    Second planet from the Sun and our closest planetary neighbor,
+                     Venus is similar in structure and size to Earth, but it is now a 
+                     very different world. Venus spins slowly in the opposite direction 
+                     most planets do. Its thick atmosphere traps heat in a runaway 
+                     greenhouse effect, making it the hottest planet in our solar 
+                     system—with surface temperatures hot enough to melt lead. 
+                     Glimpses below the clouds reveal volcanoes and deformed mountains. 
+                </p>
+                <img src="venus.png" class="img1">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-Venus’ thick atmosphere makes it the hottest planet in our solar system.
+                </p>
+        </div>
+        <div class = "divo" id = "divo3">
+            <h2 class = "p1" id = "h2">Earth</h2>
+                <p class = "p1" id = "p1">
+                    Our home planet is the third planet from the Sun, and the only 
+                    place we know of so far that’s inhabited by living things.While 
+                    Earth is only the fifth largest planet in the solar system, it 
+                    is the only world in our solar system with liquid water on the 
+                    surface. Just slightly larger than nearby Venus, Earth is the 
+                    biggest of the four planets closest to the Sun, all of which are 
+                    made of rock and metal.
+                    The name Earth is at least 1,000 years old. All of the planets,
+                    except for Earth, were named after Greek and Roman gods and 
+                    goddesses. However, the name Earth is a Germanic word, which 
+                    simply means “the ground.”
+                </p>
+                <img src="earth.jpg" class="img1">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-The only planet in our solar system with liquid water on the surface.
+                </p>
+        </div>
+        <div class = "divo" id = "divo4">
+            <h2 class = "p1" id = "h2">Mars</h2>
+                <p class = "p1" id = "p1">
+                    The fourth planet from the Sun, Mars is a dusty, cold, desert 
+                    world with a very thin atmosphere.This dynamic planet has seasons, 
+                    polar ice caps and extinct volcanoes,evidence it was once an even 
+                    more active past.Mars is one of the most explored bodies in our solar system, and it's the only planet
+                    where we've sent rovers to roam the alien landscape.India and ESA 
+                    also have spacecraft in orbit above Mars.These robotic explorers 
+                    have found lots of evidence that Mars was much wetter and warmer, 
+                    with a thicker atmosphere, billions of years ago.   
+                </p>    
+                <img src="mars.jpg" class="img1" id = "mars">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-Mars was a wet and warm planet billions of years ago.
+                </p>
+        </div>
+        <div class = "divo" id = "divo5">
+            <h2 class = "p1" id = "h2">Jupiter</h2>
+                <p class = "p1" id = "p1">
+                    Jupiter has a long history surprising scientists—all the 
+                    way back to 1610 when Galileo Galilei found the first moons
+                    beyond Earth. That discovery changed the way we see the universe.
+                    Fifth in line from the Sun, Jupiter is, by far, the largest planet 
+                    in the solar system – more than twice as massive as all the other 
+                    planets combined.Jupiter's familiar stripes and swirls are 
+                    actually cold, windy clouds of ammonia and water, floating 
+                    in an atmosphere of hydrogen and helium. Jupiter’s iconic Great 
+                    Red Spot is a giant storm bigger than Earth that has raged for 
+                    hundreds of years.
+                </p>    
+                <img src="jupiter.jpg" class="img1" id = "mars">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-The largest planet, its dark red spot is a storm larger than Earth.
+                </p>
+        </div>
+        <div class = "divo" id = "divo6">
+            <h2 class = "p1" id = "h2">Saturn</h2>
+                <p class = "p1" id = "p1">
+                    Saturn is the sixth planet from the Sun and the second largest 
+                    planet in our solar system.Adorned with thousands of beautiful 
+                    ringlets, Saturn is unique among the planets. It is not the only 
+                    planet to have rings—made of chunks of ice and rock—but none are 
+                    as spectacular or as complicated as Saturn's.Like fellow gas giant
+                    Jupiter, Saturn is a massive ball made mostly of hydrogen and 
+                    helium.
+                </p>    
+                <img src="saturn.jpg" class="img1" id = "mars">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts- Saturn has the brightest, most massive and most complex ring system of any planet.
+                </p>
+        </div>
+        <div class = "divo" id = "divo7">
+            <h2 class = "p1" id = "h2">Uranus</h2>
+                <p class = "p1" id = "p1">
+                    The first planet found with the aid of a telescope, Uranus 
+                    was discovered in 1781 by astronomer William Herschel, although
+                    he originally thought it was either a comet or a star.
+                    
+                    It was two years later that the object was universally accepted 
+                    as a new planet, in part because of observations by astronomer 
+                    Johann Elert Bode. Herschel tried unsuccessfully to name his 
+                    discovery Georgium Sidus after King George III. Instead the 
+                    scientific community accepted Bode's suggestion to name it Uranus,
+                    the Greek god of the sky, as suggested by Bode.
+                </p>    
+                <img src="uranus.jpg" class="img1" id = "mars">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts- Uranus is tipped on its axis by almost 90-degrees.
+                </p>
+        </div>
+        <div class = "divo" id = "divo8">
+            <h2 class = "p1" id = "h2">Neptune</h2>
+                <p class = "p1" id = "p1">
+                    Dark, cold and whipped by supersonic winds, ice giant Neptune
+                    is the eighth and most distant planet in our solar system.
+
+                    More than 30 times as far from the Sun as Earth, Neptune is 
+                    the only planet in our solar system not visible to the naked 
+                    eye and the first predicted by mathematics before its discovery.
+                    In 2011 Neptune completed its first 165-year orbit since its 
+                    discovery in 1846.
+
+                    NASA's Voyager 2 is the only spacecraft to have visited Neptune 
+                    up close. 
+                    </p>
+                <img src="neptune.jpg"  id = "mars">
+                <br><br>
+                <p class = "p1" id = "p1">
+                    Facts-Neptune was the first planet discovered through mathematical calculations, rather than observation.
+                </p>
+        </div>
+        <div class = "divo" id = "divo9">
+            <h2 class = "p1" id = "h2">Revolution and Rotation periods of different Planets</h2>
+                <p class = "p1" id = "p1">
+                    <table id = "planetable">
+                        <tbody><tr>
+                            <td><b>Planet</b></td>
+                            <td><b>Rotation Period</b></td>
+                            <td><b>Revolution Period</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mercury</b></td>
+                            <td><b>58.6 days</b></td>
+                            <td><b>87.97 days</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Venus</b></td>
+                            <td><b>243 days</b></td>
+                            <td><b>224.7 days</b></td>
+                        </tr>
+                        <tr>
+                            <td><b> Earth</b></td>
+                            <td><b> 0.99 days</b></td>
+                            <td><b> 365.26 days</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mars</b></td>
+                            <td><b>1.03 days</b></td>
+                            <td><b>1.88 years</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Jupiter</b></td>
+                            <td><b>0.41 days</b></td>
+                            <td><b>11.86 years</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Saturn</b></td>
+                            <td><b>0.45 days</b></td>
+                            <td><b>29.46 years</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Uranus</b></td>
+                            <td><b>0.72 days</b></td>
+                            <td><b>84.01 years</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Neptune</b></td>
+                            <td><b>0.67 days</b></td>
+                            <td><b>164.79 years</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pluto</b></td>
+                            <td><b>6.39 days</b></td>
+                            <td><b>248.59 years</b></td>
+                        </tr>
+                    </tbody></table>
+                
+        </div>
+        <div class = "div1" id = "divoo1">
+            <h2 class = "p1" id = "h2">Dwarf Planets</h2>
+                <p class = "p1" id = "p1">
+                    There are currently five planets classified as dwarf planets: Ceres, Pluto, Makemake, Haumea and Eris. Except for Ceres, which lies in the main asteroid belt, these small planets are located in the Kuiper Belt. They’re considered dwarfs because they are massive, round, and orbit the Sun, but haven't cleared their orbital path.
+                </p>
+            <img src="dwarf planets.jpg" class="img1" id = "dwarf">
+            <br><br>
+        </div>
+        <div class = "divo" id = "divoo2">
+            <h2 class = "p1" id = "h2">Pluto</h2>
+                <p class = "p1" id = "p1">
+                    Pluto is a dwarf planet that lies in the Kuiper Belt, an area full of icy bodies and other dwarf planets out past Neptune. Pluto is very small, only about half the width of the United States and its biggest moon Charon is about half the size of Pluto.
+
+                    Almost all the planets travel around the Sun in nearly perfect circles. But not Pluto. It takes an oval-shaped path with the Sun nowhere near its center. What's more, its path is quite tilted compared to the planets.
+                </p>
+            <img src="pluto.jpg" class="img1" id = "dwarf"> 
+            <br><br>
+            <p class = "p1" id = "p1">
+                Facts-Pluto is only about 1,400 miles wide. At that small size, Pluto is only about half the width of the United States.
+                Pluto is about 3.6 billion miles away from the Sun and has five moons.
+            </p>
+        </div>
+        <div class = "divo" id = "divoo3">
+            <h2 class = "p1" id = "h2">Eris</h2>
+                <p class = "p1" id = "p1">
+                    Eris was discovered on Oct. 21, 2003 by M.E. Brown, C.A. Trujillo, and D. Rabinowitz at the Palomar Observatory.
+                    With a radius of about 722 miles (1,163 kilometers), Eris is about 1/5 the radius of Earth. Eris, like Pluto, is a little smaller than Earth's Moon. If the Earth were the size of a nickel, Eris would be about as big as a popcorn kernel.
+                    From an average distance of 6,289,000,000 miles (10,125,000,000 kilometers), Eris is about 68 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. 
+                </p>
+            <img src="eris.png" class="img1" id = "dwarf"> 
+            <br><br>
+        </div>
+        <div class = "div1" id = "divm1">
+            <h2 class = "p1" id = "h2"> Our Moon</h2>
+                <p class = "p1" id = "p1">
+                    Earth's Moon is the only place beyond Earth where humans have set foot.
+                    The brightest and largest object in our night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, creating a rhythm that has guided humans for thousands of years. The Moon was likely formed after a Mars-sized body collided with Earth.
+                </p>
+            <img src="moon.jpg" class="img1" id = "dwarf"> 
+            <br><br>
+            <p class = "p1" id = "p1">
+                The Moon is Earth’s only natural satellite and the fifth largest moon in the solar system.
+            </p>
+        </div>
+        <div class = "div1" id = "divm2">
+            <h2 class = "p1" id = "h2">Moons in our Solar System</h2>
+                <p class = "p1" id = "p1">
+                    Planets and asteroids in our solar system orbit the Sun. Moons — also known as natural satellites — orbit planets and asteroids. There are more than 200 moons in our solar system. Most orbit the giant planets — with Saturn and Jupiter leading moon counts — but even smaller worlds like Pluto can have five moons in orbit.
+                    Moons come in many shapes, sizes and types. Most are airless, but a few have atmospheres and even hidden oceans. There are dozens of moons in our solar system — even a few asteroids have small companion moons.
+                </p>
+            <img src="moons.jpg" class="img1" id = "dwarf"> 
+            <br><br>
+            <p class = "p1" id = "p1">
+                Mars was a wet and warm planet billions of years ago.
+            </p>
+        </div>
+        <div class = "div1" id = "divs2">
+            <h2 class = "p1" id = "h2">The Asteroid Belt</h2>
+                <p class = "p1" id = "p1">
+                    Asteroids, sometimes called minor planets, are rocky, airless remnants left over from the early formation of our solar system about 4.6 billion years ago.
+                    The current known asteroid count is: 992,205.
+                    Most of this ancient space rubble can be found orbiting the
+                    Sun between Mars and Jupiter within the main asteroid belt. Asteroids range in size from Vesta — the largest at about 329 miles (530 kilometers) in diameter — to bodies that are less than 33 feet (10 meters) across. The total mass of all the asteroids combined is less than that of Earth's Moon.
+                </p>
+            <img src="asteroid-belt.png" class="img1" id = "dwarf"> 
+            <br><br>
+            <p class = "p1" id = "p1">
+                Mars was a wet and warm planet billions of years ago.
+            </p>
+        </div>
+        <div class = "div1" id = "divs3">
+            <h2 class = "p1" id = "h2">Comets</h2>
+                <p class = "p1" id = "p1">
+                    Comets are frozen leftovers from the formation of the solar system composed of dust, rock and ices. They range from a few miles to tens of miles wide, but as they orbit closer to the sun, they heat up and spew gases and dust into a glowing head that can be larger than a planet. This material forms a tail that stretches millions of miles.
+                    There are likely billions of comets orbiting our Sun in the Kuiper Belt and even more distant Oort Cloud.
+                </p>
+            <img src="comet.jpg" class="img1" id = "dwarf"> 
+            <br><br>
+            <p class = "p1" id = "p1">
+                Mars was a wet and warm planet billions of years ago.
+            </p>
+        </div>
+        <div class = "div1" id = "divs4">
+            <h2 class = "p1" id = "h2">Meteors,Meteorites and Meteoroids </h2>
+                <p class = "p1" id = "p1">
+                    <h3 class = "p1">Meteors</h3>
+                    <p class = "p1">When meteoroids enter Earth’s atmosphere (or that of another planet, like Mars) at high speed and burn up, the fireballs or “shooting stars” are called meteors.</p>
+                    <img src="meteor.jpg" alt="" class = "meteors">
+                    <h3 class = "p1">Meteorites</h3>                    
+                    <p class = "p1">When a meteoroid survives a trip through the atmosphere and hits the ground, it’s called a meteorite</p>
+                    <img src="meteorite.jpg" alt="" class="meteors">
+                    <h3 class = "p1">Meteoroids</h3>
+                    <p class = "p1">Meteoroids are objects in space that range in size from dust grains to small asteroids. Think of them as “space rocks."</p>
+                    <img src="meteoroid.jpg" alt="" class="meteors">
+                </p>
+        </div>
+        <div class = "div1" id = "divs5">
+            <h2 class = "p1" id = "h2">Spacecraft out of the Solar System</h2>
+                <p class = "p1" id = "p1">
+                    NASA's twin Voyager probes – Voyager 1 and Voyager 2- were launched in 1977 to explore the outer planets in our solar system. Voyager 2 launched on Aug. 20, 1977, and Voyager 1 launched about two weeks later, on Sept. 5. Since then, the spacecraft have been traveling along different flight paths and at different speeds. Voyager 1 passed the boundary of interstellar space in 2012, while Voyager 2 is in the outer reaches of the solar system.
+                </p>
+            <img src="voyager 1.jpg" class="img1" id = "dwarf">
+            <img src="voyager 2.jpg" class="img1" id = "dwarf">
+        </div>            
+        <div class = "div1" id = "divs6">
+            <h2 class = "p1" id = "h2">Where are we now?</h2>
+                <p class = "p1" id = "p1">
+                    The solar system sits far from the galactic core (almost 30,000 light-years), between two spiral arms. More so, the solar system's circular orbit helps it avoid that dangerous part of the galaxy. The galactic core likely contains a massive black hole and releases consistent bursts of radiation.
+                </p>
+            <img src="wherearewe.jpg" class="img1" id = "dwarf">
+            <br><br>
+            <p class = "p1" id = "p1">
+                Fact-The Earth's Cosmic Address-The Solar System, Orion Arm, The Milky Way, Local Group, Virgo Cluster, Virgo Super-Cluster, Universe 
+            </p>
+        </div> 
+    </body>
+</html>

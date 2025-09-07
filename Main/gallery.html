@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="1-circle.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Astropedia-Gallery</title>
+    <style>
+        body {
+            background-image: url('5.png');
+            background-attachment: fixed;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0px;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            border-bottom: 3px solid red;
+        }
+        
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+            border-bottom: 3px solid red;
+        }
+        
+        #logo {
+            float: left;
+            border-radius: 100%;
+            height: 150px;
+            height: 150px;
+        }
+        
+        h1 {
+            color: white;
+            margin-left: 50px;
+            float: left;
+            font-size: 50px;
+            text-shadow: 10px 10px 10px grey;
+            font-family: Edwardian -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        #gototop {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        .icon-bar {
+            position: fixed;
+            bottom: 10px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+        
+        .sidebutton {
+            background: transparent;
+            color: black;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="headd">
+        <a href="main.html"><img id="logo" src="1.png" style="width: 100px; height: 100px; margin-top: 20px; margin-left: 20px; box-shadow: 10px 10px 10px grey;"></a>
+        <h1>Gallery</h1>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="topnav" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <a href="main.html">Home</a>
+        <a href="gallery.html" class="active" style="font-size: 16px;">Gallery</a>
+        <a href="../SpaceScience/spacescience.html" style="font-size: 16px;">Space Science</a>
+        <a href="../Solar System/Solarsystem.html" style="font-size: 16px;">Our Solar System</a>
+        <!-- <a href="" style="font-size: 16px;">Space Missions</a> -->
+        <!-- <a href="spaceagencies.html" style="font-size: 16px;">Space Agencies</a> -->
+        <a href="significantinventionsinastronomy.html" style="font-size: 16px;">Significant Inventions</a>
+        <!-- <a href="greatastronomers.html" style="font-size: 16px;">Great Astronomers</a> -->
+    </div>
+    <br>
+    <div>
+        <span style="color: white; font-weight: bold; font-size: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-left: 10px;">Go to: </span><br>
+        <a href="#planetsanddwarfplanets" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Planets and Dwarf Planets</a>
+        <a href="#satellites: naturalandartificial" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Satellites: Natural and Artificial</a>
+        <a href="#asteroids" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Asteroids</a>
+        <a href="#comets" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Comets</a>
+        <a href="#galaxies" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Galaxies</a>
+        <a href="#stars" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Stars</a>
+        <a href="#constellations" style="margin-left: 10px; color: white; font-weight: bold; text-decoration: underline;">Constellations</a>
+    </div>
+    <table>
+        <br>
+        <span id="planetsanddwarfplanets" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Planets and Dwarf Planets</span>
+        <br><br>
+        <tr>
+            <img src="./images/1.png" alt="Sun" title="Sun" style="height: 150px; width: 150px; padding-left: 10px;">
+            <img src=" ./images/2.png " alt="Mercury" title="Mercury" style="height: 150px; width: 150px; ">
+            <img src="./images/3.png " alt="Venus" title="Venus" style="height: 150px; width: 150px; ">
+            <img src="./images/4.png " alt="Earth" title="Earth" style="height: 150px; width: 150px; ">
+            <img src="./images/5.png " alt="Mars" title="Mars" style="height: 150px; width: 150px; ">
+            <img src="./images/6.png " alt="Jupiter" title="Jupiter" style="height: 150px; width: 150px; ">
+            <img src="./images/7.png " alt="Saturn" title="Saturn" style="height: 150px; width: 275px; ">
+            <img src="./images/8.png " alt="Uranus" title="Uranus" style="height: 150px; width: 150px; ">
+            <img src="./images/9.png " alt="Neptune" title="Neptune" style="height: 150px; width: 150px; padding-left: 10px;">
+            <img src="./images/10.png " alt="Pluto" title="Pluto" style="height: 150px; width: 150px; ">
+            <img src="./images/11.png " alt="Eris " title="Eris " style="height: 150px; width: 150px; ">
+            <img src="./images/12.png " alt="Haumea " title="Haumea " style="height: 150px; width: 150px; ">
+            <img src="./images/13.png " alt="Makemake " title="Makemake " style="height: 150px; width: 150px; ">
+            <img src="./images/14.png " alt="Ceres " title="Ceres " style="height: 150px; width: 150px; ">
+            <img src="./images/15.png " alt="90377 Sedna " title="90377 Sedna " style="height: 150px; width: 150px; ">
+            <img src="./images/16.png " alt="50000 Quaoar " title="50000 Quaoar " style="height: 150px; width: 160px; ">
+            <img src="./images/17.png " alt="90482 Orcus " title="90482 Orcus " style="height: 150px; width: 115px; ">
+            <img src="./images/18.png " alt="225088 Gonggong " title="225088 Gonggong " style="height: 150px; width: 150px; padding-left: 10px;">
+            <img src="./images/19.png " alt="2060 Chiron " title="2060 Chiron " style="height: 150px; width: 150px; ">
+            <img src="./images/20.png " alt="704 Interamnia " title="704 Interamnia " style="height: 150px; width: 150px; ">
+            <hr>
+            <span id="satellites: naturalandartificial" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Satellites: Natural and Artificial</span>
+            <br><br>
+            <img src="./images/21.png " alt="Moon (Earth's Moon) " title="Moon (Earth's Moon) " style="height: 150px; width: 150px; margin-top: 10px;">
+            <img src="./images/22.png " alt="Phobos (Mars' Moon)" title="Phobos (Mars' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/23.png " alt="Deimos (Mars' Moon)" title="Deimos (Mars' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/24.png " alt="Europa (Jupiter's Moon)" title="Europa (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/25.png " alt="Lo (Jupiter's Moon)" title="Lo (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/26.png " alt="Ganymede (Jupiter's Moon)" title="Ganymede (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/27.png " alt="Callisto (Jupiter's Moon)" title="Callisto (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/28.png " alt="Amalthea (Jupiter's Moon)" title="Amalthea (Jupiter's Moon)" style="height: 150px; width: 250px; ">
+            <img src="./images/29.png " alt="Adrastea (Jupiter's Moon)" title="Adrastea (Jupiter's Moon)" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/30.png " alt="Thebe (Jupiter's Moon)" title="Thebe (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/31.png " alt="Metis (Jupiter's Moon)" title="Metis (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/32.png " alt="Themisto (Jupiter's Moon)" title="Themisto (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/33.png " alt="Carpo (Jupiter's Moon)" title="Carpo (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/34.png " alt="Kalyke (Jupiter's Moon)" title="Kalyke (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/35.png " alt="Isonoe (Jupiter's Moon)" title="Isonoe (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/36.png " alt="Harpalyke (Jupiter's Moon)" title="Harpalyke (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/37.png " alt="Chaldene (Jupiter's Moon)" title="Chaldene (Jupiter's Moon)" style="height: 150px; width: 150px; margin-left: 10px;">
+            <img src="./images/38.png " alt="Megaclite (Jupiter's Moon)" title="Megaclite (Jupiter's Moon)" style="height: 150px; width: 200px; ">
+            <img src="./images/39.png " alt="Autonoe (Jupiter's Moon)" title="Autonoe (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/40.png " alt="Erinome (Jupiter's Moon)" title="Erinome (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/41.png " alt="Hermippe (Jupiter's Moon)" title="Hermippe (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/42.png " alt="Euanthe (Jupiter's Moon)" title="Euanthe (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/43.png " alt="Praxidike (Jupiter's Moon)" title="Praxidike (Jupiter's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/44.png " alt="Thyone (Jupiter's Moon)" title="Thyone (Jupiter's Moon)" style="height: 150px; width: 200px; ">
+            <img src="./images/45.png " alt="Titan (Saturn's Moon)" title="Titan (Saturn's Moon)" style="height: 125px; width: 150px; margin-left: 50px">
+            <img src="./images/46.png " alt="Enceladus (Saturn's Moon)" title="Enceladus (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/47.png " alt="Tethys (Saturn's Moon)" title="Tethys (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/48.png " alt="Mimas (Saturn's Moon)" title="Mimas (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/49.png " alt="Dione (Saturn's Moon)" title="Dione (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/50.png " alt="Lapetus (Saturn's Moon)" title="Lapetus (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/51.png " alt="Rhea (Saturn's Moon)" title="Rhea (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/52.png " alt="Hypereon (Saturn's Moon)" title="Hypereon (Saturn's Moon)" style="height: 150px; width: 150px;">
+            <img src="./images/53.png " alt="Phoebe (Saturn's Moon)" title="Phoebe (Saturn's Moon)" style="height: 150px; width: 150px; margin-left: 30px;">
+            <img src="./images/54.png " alt="Methone (Saturn's Moon)" title="Methone (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/55.png " alt="Mundilfari (Saturn's Moon)" title="Mundilfari (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/56.png " alt="Janus (Saturn's Moon)" title="Janus (Saturn's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/57.png " alt="Umbriel (Uranus' Moon)" title="Umbriel (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/58.png " alt="Oberon (Uranus' Moon)" title="Oberon (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/59.png " alt="Titania (Uranus' Moon)" title="Titania (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/60.png " alt="Miranda (Uranus' Moon)" title="Miranda (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/61.png " alt="Ariel (Uranus' Moon)" title="Ariel (Uranus' Moon)" style="height: 150px; width: 150px; margin-left: 30px;">
+            <img src="./images/62.png " alt="Charon (Uranus' Moon)" title="Charon (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/63.png " alt="Neried (Uranus' Moon)" title="Neried (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/64.png " alt="Proteus (Uranus' Moon)" title="Proteus (Uranus' Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/65.png " alt="Triton (Neptune's Moon)" title="Triton (Neptune's Moon)" style="height: 150px; width: 150px; ">
+            <img src="./images/66.png " alt="Loamedeia (Neptune's Moon)" title="Loamedeia (Neptune's Moon)" style="height: 150px; width: 150px; ">
+            <hr>
+            <span id="asteroids" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Asteroids</span>
+            <br><br>
+            <img src="./images/67.png " alt="Ceres" title="Ceres" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/68.png " alt="4 Vesta" title="4 Vesta" style="height: 150px; width: 150px;">
+            <img src="./images/69.png " alt="433 Eros" title="433 Eros" style="height: 150px; width: 150px;">
+            <img src="./images/70.png " alt="243 Ida" title="243 Ida" style="height: 150px; width: 150px;">
+            <img src="./images/71.png " alt="2 Pallas" title="2 Pallas" style="height: 150px; width: 150px;">
+            <img src="./images/72.png " alt="21 Lutetia" title="21 Lutetia" style="height: 150px; width: 150px;">
+            <img src="./images/73.png " alt="16 Psyche" title="16 Psyche" style="height: 150px; width: 150px;">
+            <img src="./images/74.png " alt="5535 Annefrank" title="5535 Annefrank" style="height: 150px; width: 150px;">
+            <img src="./images/75.png " alt="4179 Toutatis" title="4179 Toutatis" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/76.png " alt="161273 Ryugu" title="161273 Ryugu" style="height: 150px; width: 150px;">
+            <img src="./images/77.png " alt="50000 Quaoar" title="5000 Quaoar" style="height: 150px; width: 150px;">
+            <hr>
+            <span id="comets" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Comets</span>
+            <br><br>
+            <img src="./images/78.png " alt="Halley's Comet" title="Halley's Comet" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/79.png " alt="Comet Hale-Bopp" title="Comet Hale-Bopp" style="height: 150px; width: 150px;">
+            <img src="./images/80.png " alt="Comet Hyakutake" title="Comet Hyakutake" style="height: 150px; width: 150px;">
+            <img src="./images/81.png " alt="Comet ISON" title="Comet ISON" style="height: 150px; width: 150px;">
+            <img src="./images/82.png " alt="Comet Kohoutek" title="Comet Kohoutek" style="height: 150px; width: 150px;">
+            <img src="./images/83.png " alt="Comet Donati" title="Comet Donati" style="height: 150px; width: 150px;">
+            <img src="./images/84.png " alt="Comet Arend-Roland" title="Comet Arend-Roland" style="height: 150px; width: 150px;">
+            <img src="./images/85.png " alt="Great Comet of 1882" title="Great Comet of 1882" style="height: 150px; width: 150px;">
+            <hr>
+            <span id="galaxies" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Galaxies</span>
+            <br><br>
+            <img src="./images/86.png " alt="Miky Way Galaxy" title="Miky Way Galaxy" style="height: 150px; width: 150px; margin-left: 40px;">
+            <img src="./images/87.png " alt="Andromeda Galaxy" title="Andromeda Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/88.png " alt="Large Magellanic Cloud" title="Large Magellanic Cloud" style="height: 150px; width: 150px;">
+            <img src="./images/89.png " alt="Sombrero Galaxy" title="Sombrero Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/90.png " alt="Whirlpool Galaxy" title="Whirlpool Galaxy" style="height: 150px; width: 200px;">
+            <img src="./images/91.png " alt="Messier 82" title="Messier 82" style="height: 150px; width: 150px;">
+            <img src="./images/92.png " alt="Black Eye Galaxy" title="Black Eye Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/93.png " alt="Tadpole Galaxy" title="Tadpole Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/94.png " alt="Messier 81" title="Messier 81" style="height: 150px; width: 150px; margin-left: 60px;">
+            <img src="./images/95.png " alt="Messier 63" title="Messier 63" style="height: 150px; width: 150px;">
+            <img src="./images/96.png " alt="Cartwheel Galaxy" title="Cartwheel Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/97.png " alt="Pinwheel Galaxy" title="Pinwheel Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/98.png " alt="Small Magellanic Cloud" title="Small Magellanic Cloud" style="height: 150px; width: 150px;">
+            <img src="./images/99.png " alt="Messier 83" title="Messier 83" style="height: 150px; width: 150px;">
+            <img src="./images/100.png " alt="Messier 87" title="Messier 87" style="height: 150px; width: 150px;">
+            <img src="./images/101.png " alt="NGC 6946" title="NGC 6946" style="height: 150px; width: 150px;">
+            <img src="./images/102.png " alt="Cygnus A" title="Cygnus A" style="height: 150px; width: 150px; margin-left: 60px;">
+            <img src="./images/103.png " alt="ESO 137-001" title="ESO 137-001" style="height: 150px; width: 150px;">
+            <img src="./images/104.png " alt="Mayall's Object" title="Mayall's Object" style="height: 150px; width: 150px;">
+            <img src="./images/105.png " alt="Hoag's Object" title="Hoag's Object" style="height: 150px; width: 150px;">
+            <img src="./images/106.png " alt="Comet Galaxy" title="Comet Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/107.png " alt="Messier 77" title="Messier 77" style="height: 150px; width: 150px;">
+            <img src="./images/108.png " alt="Triangulum Galaxy" title="Triangulum Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/109.png " alt="NGC 4039" title="NGC 4039" style="height: 150px; width: 150px;">
+            <img src="./images/110.png " alt="Centaurus A" title="Centaurus A" style="height: 150px; width: 150px; margin-left: 60px;">
+            <img src="./images/111.png " alt="NGC 5866" title="NGC 5866" style="height: 150px; width: 150px;">
+            <img src="./images/112.png " alt="Canis Major Overdensity" title="Canis Major Overdensity" style="height: 150px; width: 150px;">
+            <img src="./images/113.png " alt="Messier 90" title="Messier 90" style="height: 150px; width: 150px;">
+            <img src="./images/114.png " alt="NGC 2841" title="NGC 2841" style="height: 150px; width: 150px;">
+            <img src="./images/115.png " alt="Sagittarius Dwarf Spheroidal Galaxy" title="Sagittarius Dwarf Spheroidal" style="height: 150px; width: 150px;">
+            <img src="./images/116.png " alt="Sculptor Dwarf Galaxy" title="Sculptor Dwarf Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/117.png " alt="Circinus Galaxy" title="Circinus Galaxy" style="height: 150px; width: 150px;">
+            <img src="./images/118.png " alt="NGC 7318" title="NGC 7318" style="height: 150px; width: 150px; margin-left: 60px;">
+            <img src="./images/119.png " alt="Malin 1" title="Malin 1" style="height: 150px; width: 150px;">
+            <img src="./images/120.png " alt="Messier 102" title="Messier 102" style="height: 150px; width: 150px;">
+            <img src="./images/121.png " alt="Arp 220" title="Arp 220" style="height: 150px; width: 150px;">
+            <img src="./images/122.png " alt="UGC 12951" title="UGC 12951" style="height: 150px; width: 150px;">
+            <img src="./images/123.png " alt="NGC 4151" title="NGC 4151" style="height: 150px; width: 150px;">
+            <img src="./images/124.png " alt="Boötes I" title="Boötes I" style="height: 150px; width: 150px;">
+            <img src="./images/125.png " alt="BX442" title="BX442" style="height: 150px; width: 150px;">
+            <hr>
+            <span id="stars" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Stars</span>
+            <br><br>
+            <img src="./images/126.png " alt="Betelgeuse" title="Betelgeuse" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/127.png " alt="Sirius" title="Sirius" style="height: 150px; width: 150px;">
+            <img src="./images/128.png " alt="Proxima Centauri" title="Proxima Centauri" style="height: 150px; width: 150px;">
+            <img src="./images/129.png " alt="Rigel" title="Rigel" style="height: 150px; width: 150px;">
+            <img src="./images/130.png " alt="Vega" title="Vega" style="height: 150px; width: 150px;">
+            <img src="./images/131.png " alt="Deneb" title="Deneb" style="height: 150px; width: 150px;">
+            <img src="./images/132.png " alt="Antares" title="Antares" style="height: 150px; width: 150px;">
+            <img src="./images/133.png " alt="Sun" title="Sun" style="height: 150px; width: 150px;">
+            <img src="./images/134.png " alt="Canopus" title="Canopus" style="height: 150px; width: 150px; margin-left: 30px;">
+            <img src="./images/135.png " alt="Alpha Centauri A" title="Alpha Centauri A" style="height: 150px; width: 200px;">
+            <img src="./images/136.png " alt="T Tauri" title="T Tauri" style="height: 150px; width: 150px;">
+            <img src="./images/137.png " alt="Sirius A" title="Sirius A" style="height: 150px; width: 150px;">
+            <img src="./images/138.png " alt="Barnard's Star" title="Barnard's Star" style="height: 150px; width: 150px;">
+            <img src="./images/139.png " alt="Wolf 359" title="Wolf 359" style="height: 150px; width: 150px;">
+            <img src="./images/140.png " alt="Pollux" title="Pollux" style="height: 150px; width: 150px;">
+            <img src="./images/141.png " alt="zet UMa" title="zet UMa" style="height: 150px; width: 150px;">
+            <img src="./images/142.png " alt="Saiph" title="Saiph" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/143.png " alt="Castor" title="Castor" style="height: 150px; width: 150px;">
+            <img src="./images/144.png " alt="Alnilam" title="Alnilam" style="height: 150px; width: 150px;">
+            <img src="./images/145.png " alt="Alpha Ursae Majoris" title="Alpha Ursae Majoris" style="height: 150px; width: 150px;">
+            <img src="./images/146.png " alt="Beta Tauri" title="Beta Tauri" style="height: 150px; width: 150px;">
+            <img src="./images/147.png " alt="Beta Ursae Minoris" title="Beta Ursae Minoris" style="height: 150px; width: 150px;">
+            <img src="./images/148.png " alt="Zeta Puppis" title="Zeta Puppis" style="height: 150px; width: 150px;">
+            <img src="./images/149.png " alt="Beta Canis Minoris" title="Beta Canis Minoris" style="height: 150px; width: 150px;">
+            <hr>
+            <span id="constellations" style="margin-left: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-weight: bold; font-size: x-large;">Constellations</span>
+            <br><br>
+            <img src="./images/151.png " alt="Orion" title="Orion" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/152.png " alt="Ursa Major" title="Ursa Major" style="height: 150px; width: 150px;">
+            <img src="./images/153.png " alt="Ursa Minor" title="Ursa Minor" style="height: 150px; width: 150px;">
+            <img src="./images/154.png " alt="Scorpius" title="Scorpius" style="height: 150px; width: 150px;">
+            <img src="./images/155.png " alt="Cygnus" title="Cygnus" style="height: 150px; width: 150px;">
+            <img src="./images/156.png " alt="Lyra" title="Lyra" style="height: 150px; width: 150px;">
+            <img src="./images/157.png " alt="Gemini" title="Gemini" style="height: 150px; width: 150px;">
+            <img src="./images/158.png " alt="Leo" title="Leo" style="height: 150px; width: 150px;">
+            <img src="./images/159.png " alt="Draco" title="Draco" style="height: 150px; width: 150px; margin-left: 50px">
+            <img src="./images/160.png " alt="Capricornus" title="Capricornus" style="height: 150px; width: 150px;">
+            <img src="./images/161.png " alt="Cassiopeia" title="Cassiopeia" style="height: 150px; width: 150px;">
+            <img src="./images/162.png " alt="Aquila" title="Aquila" style="height: 150px; width: 150px;">
+            <img src="./images/163.png " alt="Auriga" title="Auriga" style="height: 150px; width: 150px;">
+            <img src="./images/164.png " alt="Boötes" title="Boötes" style="height: 150px; width: 150px;">
+            <img src="./images/165.png " alt="Aquarius" title="Aquarius" style="height: 150px; width: 150px;">
+            <img src="./images/166.png " alt="Aries" title="Aries" style="height: 150px; width: 150px;">
+            <img src="./images/167.png " alt="Sagittarius" title="Sagittarius" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/168.png " alt="Taurus" title="Taurus" style="height: 150px; width: 150px;">
+            <img src="./images/169.png " alt="Ophiuchus" title="Ophiuchus" style="height: 150px; width: 150px;">
+            <img src="./images/170.png " alt="Crux" title="Crux" style="height: 150px; width: 150px;">
+            <img src="./images/171.png " alt="Eridanus" title="Eridanus" style="height: 150px; width: 150px;">
+            <img src="./images/172.png " alt="Centaurus" title="Centaurus" style="height: 150px; width: 150px;">
+            <img src="./images/173.png " alt="Virgo" title="Virgo" style="height: 150px; width: 150px;">
+            <img src="./images/174.png " alt="Corona Borealis" title="Corona Borealis" style="height: 150px; width: 150px;">
+            <img src="./images/175.png " alt="Canis Minor" title="Canis Minor" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/176.png " alt="Delphinus" title="Delphinus" style="height: 150px; width: 150px;">
+            <img src="./images/177.png " alt="Perseus" title="Perseus" style="height: 150px; width: 150px;">
+            <img src="./images/178.png " alt="Pegasus" title="Pegasus" style="height: 150px; width: 150px;">
+            <img src="./images/179.png " alt="Leo Minor" title="Leo Minor" style="height: 150px; width: 150px;">
+            <img src="./images/180.png " alt="Pisces" title="Pisces" style="height: 150px; width: 150px;">
+            <img src="./images/181.png " alt="Lepus" title="Lepus" style="height: 150px; width: 150px;">
+            <img src="./images/182.png " alt="Serpens" title="Serpens" style="height: 150px; width: 150px;">
+            <img src="./images/183.png " alt="Monoceros" title="Monoceros" style="height: 150px; width: 150px; margin-left: 50px;">
+            <img src="./images/184.png " alt="Equuleus" title="Equuleus" style="height: 150px; width: 150px;">
+            <img src="./images/185.png " alt="Corvus" title="Corvus" style="height: 150px; width: 150px;">
+            <img src="./images/186.png " alt="Octans" title="Octans" style="height: 150px; width: 150px;">
+            <img src="./images/187.png " alt="Microscopium" title="Microscopium" style="height: 150px; width: 150px;">
+            <img src="./images/188.png " alt="Scutum" title="Scutum" style="height: 150px; width: 150px;">
+            <img src="./images/189.png " alt="Puppis" title="Puppis" style="height: 150px; width: 150px;">
+            <hr>
+        </tr>
+        <div class="icon-bar">
+            <a href="quiz.html" class="sidebutton"><img src="8.png" style="width: 50px; height: 50px; border-radius: 100%;" title="Try out this quiz on astronomy and get to know how much you learnt from this website."></a>
+            <a href="review.html" class="sidebutton"><img src="10.png" style="width: 50px; height: 50px; border-radius: 100%;" title="Please leave us a review before leaving and let us know how you felt about our website."></a>
+        </div>
+        <img id="gototop" src="9.png" onclick="gototop()" style="width: 50px; height: 50px; border-radius: 100%; float: right; position: sticky; bottom: 10px; right: 10px; cursor: pointer;">
+        <script>
+            var scrolltotop = document.getElementById('gototop');
+
+            function gototop() {
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </table>
+</body>
+
+</html>

@@ -1,7 +1,6 @@
-Well - This is just a simple personal project I had made for my self in grade 8.. I wrote mostly everything from scratch, well except the content ofcourse, but I'm proud of the CSS i wrote that time.. I can't even recall that much CSS now.
-I was always found of Astronomy, and I really want to actually step up the game when it comes to integrating Computer Science in scientific fields - which can help to take major steps again in Science.
+Well - This is just a simple personal project I had made in 2020..
+I was always fond of Astronomy, and I want to step up my game- by trying to integrate CSE in scientific fields contributing to advancements in science!
 
-I was actually planning to make a Solar System simulator(Its a 9 body interaction (or) problem if interaction between every 2 bodies is considered but i would probably ignore some of them.) in SFML/SDL 2 for The CruX submission which i would add as
-another page in this project, but time didn't permit, and I fell sick.. so this is what I have to upload.
+I had planned to build a Solar System simulator (a 9-body problem if interactions between every two bodies are considered, though I would likely simplify it by ignoring some), using SFML/SDL2 for my CRUx submission. I wanted to include it as another module in this project, but due to time constraints and falling sick, I couldn’t complete it—so I’m submitting this instead.
 
-Thank You
+Thank You!
